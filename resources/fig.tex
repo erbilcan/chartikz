@@ -1,0 +1,22 @@
+\newcommand{\flowA}[0]{
+	\tikzstyle{rec} = [draw, rectangle, minimum size=0.5cm]
+	\tikzstyle{dia} = [draw, diamond, minimum size=0.5cm]
+	\tikzstyle{cir} = [draw, circle, minimum size=0.5cm]
+	\tikzstyle{line} = [draw, -latex']
+	\begin{figure}
+		\centering
+		\begin{tikzpicture}[node distance = 1cm, auto]
+			\node [rec] (rec1) {};
+			\node [dia, below of=rec1] (dia1) {};
+			\node [cir, below of=dia1] (cir1) {};
+			\node [rec, right of=dia1] (rec2) {};
+			\node [cir, below of=rec2] (cir2) {};
+			\path [line] (rec1) -- (dia1);
+			\path [line] (dia1) -- (cir1);
+			\path [line] (dia1) -- (rec2);
+			\path [line] (rec2) -- (cir2);
+		\end{tikzpicture}
+		\caption{asdasd}
+		\label{fig:flow}
+	\end{figure}
+} 

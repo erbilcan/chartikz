@@ -1,0 +1,30 @@
+\newcommand{\autoFlowchart}[0]{
+	\tikzstyle{rec} = [draw, rectangle, minimum size=1cm]
+	\tikzstyle{dia} = [draw, diamond, minimum size=1cm]
+	\tikzstyle{cir} = [draw, circle, minimum size=1cm]
+	\tikzstyle{line} = [draw, -latex]
+	\begin{figure}
+		\centering
+		\begin{tikzpicture}[node distance = 2cm, auto]
+			\node [cir] (cir4) {};
+			\node [rec, below of=cir4] (rec2) {};
+			\node [dia, below of=rec2] (dia3) {};
+			\node [rec, below of=dia3] (rec1) {};
+			\node [cir, below of=rec1] (cir5) {};
+			\node [dia, right of=dia3] (dia7) {};
+			\node [cir, below of=dia7] (cir6) {};
+			\node [rec, right of=dia7] (rec8) {};
+			\node [cir, below of=rec8] (cir9) {};
+			\path [line] (rec2) -- (dia3);
+			\path [line] (dia3) -- (rec1);
+			\path [line] (cir4) -- (rec2);
+			\path [line] (rec1) -- (cir5);
+			\path [line] (dia3) -- (dia7);
+			\path [line] (dia7) -- (cir6);
+			\path [line] (dia7) -- (rec8);
+			\path [line] (rec8) -- (cir9);
+		\end{tikzpicture}
+		\caption{Auto-generated flowchart}
+		\label{fig:auto-flowchart}
+	\end{figure}
+}
