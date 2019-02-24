@@ -1,6 +1,6 @@
  # chartikz - Digitalizing Hand-Drawn Flowcharts
  
- This is a MATLAB implementation of digitalizing flowcharts. Our method decomposes the flowchart into smaller components such as rectangles, circles, diamonds, arrows and identifies each component. After that, connection information is extracted and finally the flowchart is re-composed to be drawn with tikz in LaTeX.
+ This project is about digitalizing hand-drawn flowcharts. It is written in MATLAB and it uses IPT functions. Our method decomposes the flowchart into smaller components such as rectangles, circles, diamonds, arrows and identifies each component. After that, connection information is extracted and finally the flowchart is re-composed to be drawn with tikz in LaTeX.
  
  ## Assumptions
  
