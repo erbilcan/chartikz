@@ -34,7 +34,7 @@ Its main function is "main_flowchart.m"
     main_flowchart(I, DEBUG_MODE);
 ```
 
-If DEBUG_MODE equals 1, every figure is shown.
+If DEBUG_MODE equals 1, the figures created at each step are shown.
 
 tikz commands are written to file located in 'output/tikz_command.tex'.
 
